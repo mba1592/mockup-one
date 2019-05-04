@@ -1,1 +1,258 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+
+body {
+  font-family: 'Montserrat';
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  border: 5px solid;
+}
+
+.lnr {
+  height: 20px;
+}
+
+.address {
+  flex-grow: 1;
+  width: 150px;
+  border: 5px solid green;
+}
+
+.phone {
+  flex-basis: 300px;
+  width: 150px;
+  border: 5px solid pink;
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: 550px;
+  grid-template-rows: 200px;
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 100px;
+  color: #FFFFFF;
+  border: 5px solid gray;
+}
+
+.container2 {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "header header side"
+    "content content1 ."
+    "content2 content3 .";
+  border: 5px solid pink;
+}
+
+.box {
+  grid-area: header;
+  place-self: center;
+  width: 200px;
+  height: 50px;
+  margin-left: 50px;
+  border: 5px solid;
+}
+
+button {
+  grid-area: side;
+  place-self: center;
+  width: 80px;
+  height: 30px;
+}
+
+.box1 {
+  grid-area: content;
+  place-self: center;
+  width: 150px;
+  height: 150px;
+  margin-left: 50px;
+  border: 5px solid blue;
+}
+
+.box2 {
+  grid-area: content1;
+  place-self: center;
+  width: 150px;
+  height: 150px;
+  border: 5px solid red;
+}
+
+.box3 {
+  grid-area: content2;
+  place-self: center;
+  width: 150px;
+  height: 150px;
+  margin-left: 50px;
+  border: 5px solid yellow;
+}
+
+.box4 {
+  grid-area: content3;
+  place-self: center;
+  width: 150px;
+  height: 150px;
+  border: 5px solid brown;
+}
+
+.container3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "header . ."
+    "content content side"
+    "content1 content2 side1";
+  border: 5px solid purple;
+}
+
+.gallery {
+  grid-area: header;
+  width: 350px;
+  height: 50px;
+  border: 5px solid green;
+}
+
+.box5 {
+  grid-area: content;
+  border: 5px solid yellow;
+}
+
+.box6 {
+  grid-area: content1;
+  width: 150px;
+  height: 150px;
+  border: 5px solid red;
+}
+
+.box7 {
+  grid-area: content2;
+  width: 150px;
+  height: 150px;
+  border: 5px solid pink;
+}
+
+.box8 {
+  grid-area:side1;
+  width: 150px;
+  height: 150px;
+  border: 5px solid orange;
+}
+
+.box9 {
+  grid-area: side;
+  width: 150px;
+  height: 150px;
+  border: 5px solid blue;
+}
+
+.container4 {
+  display: flex;
+  border: 5px solid pink;
+}
+
+.container5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    ". header ."
+    "section section1 section2";
+  border: 5px solid blue;
+}
+
+.news{
+  grid-area: header;
+  border: 5px solid purple;
+}
+
+.box10 {
+  grid-area: section;
+  width: 150px;
+  height: 150px;
+  border: 5px solid black;
+}
+
+.box11 {
+  grid-area: section1;
+  width: 150px;
+  height: 150px;
+  border: 5px solid red;
+}
+
+.box12 {
+  grid-area: section2;
+  width: 150px;
+  height: 150px;
+  border: 5px solid green;
+}
+
+.container6 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "header . sidebar "
+    "content content content1"
+    "content content content2";
+  border: 5px solid yellow;
+}
+
+.touch {
+  grid-area: header;
+  border: 5px solid orange;
+}
+
+.touchform {
+  grid-area: content;
+  border: 5px solid pink;
+}
+
+.box14 {
+   grid-area: content2;
+  width: 100px;
+  height: 100px;
+  border: 5px solid purple;
+}
+
+.box15 {
+  grid-area: content1;
+  width: 100px;
+  height: 100px;
+  border: 5px solid brown;
+}
+
+.box16 {
+  grid-area: sidebar;
+  width: 300px;
+  height: 50px;
+  border: 5px solid green;
+}
+
+.container7 {
+  display: flex;
+  border: 5px solid orange;
+}
+.box17 {
+  width: 100px;
+  height: 100px;
+  border: 5px solid purple;
+}
+
+.box18 {
+  width: 100px;
+  height: 100px;
+  border: 5px solid pink;
+}
+
+.box19 {
+  width: 100px;
+  height: 100px;
+  border: 5px solid blue;
+}
 
