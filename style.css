@@ -2,257 +2,482 @@
 
 body {
   font-family: 'Montserrat';
+  font-weight: bold;
+}
+
+button {
+  width: 70px;
+  height: 32px;
+  margin-top: 90px;
+  margin-left: 80px;
+  border: none;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  padding: 10px;
+}
+
+input {
+width: 75%;
+height: 30px;
+border: none;
+font-size: 20px;
+border-bottom: 1px solid gray;
+margin-top: 20px;
+}
+
+.submit {
+  background-color: orange;
+  color: #FFFFFF;
+  border: none;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  font-size: 15px;
 }
 
 .container {
   display: flex;
-  flex-wrap: wrap;
-  border: 5px solid;
-}
-
-.lnr {
-  height: 20px;
+  height: 90px;
+  justify-content: space-around;
 }
 
 .address {
-  flex-grow: 1;
-  width: 150px;
-  border: 5px solid green;
+  margin-left: 600px;
 }
 
-.phone {
-  flex-basis: 300px;
-  width: 150px;
-  border: 5px solid pink;
+.location, .contact {
+  margin-top: 30px;
 }
 
-.container1 {
-  display: grid;
-  grid-template-columns: 550px;
-  grid-template-rows: 200px;
-  position: absolute;
-  margin-top: 250px;
-  margin-left: 100px;
-  color: #FFFFFF;
-  border: 5px solid gray;
+.container1{
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/bg-image-01.jpg);
+  height: 200vh;
+  background-size: contain;
 }
 
 .container2 {
   display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas:
-    "header header side"
-    "content content1 ."
-    "content2 content3 .";
-  border: 5px solid pink;
+  grid-template-columns: 550px;
+  grid-template-rows: 200px;
+  color: #FFFFFF;
+  margin-top: 100px;
+  margin-left: 180px;
 }
 
-.box {
-  grid-area: header;
-  place-self: center;
-  width: 200px;
-  height: 50px;
-  margin-left: 50px;
-  border: 5px solid;
+.text{
+  font-size: 25px;
+  font-weight: lighter;
 }
 
-button {
-  grid-area: side;
-  place-self: center;
-  width: 80px;
-  height: 30px;
-}
-
-.box1 {
-  grid-area: content;
-  place-self: center;
-  width: 150px;
-  height: 150px;
-  margin-left: 50px;
-  border: 5px solid blue;
-}
-
-.box2 {
-  grid-area: content1;
-  place-self: center;
-  width: 150px;
-  height: 150px;
-  border: 5px solid red;
-}
-
-.box3 {
-  grid-area: content2;
-  place-self: center;
-  width: 150px;
-  height: 150px;
-  margin-left: 50px;
-  border: 5px solid yellow;
-}
-
-.box4 {
-  grid-area: content3;
-  place-self: center;
-  width: 150px;
-  height: 150px;
-  border: 5px solid brown;
+.text1{
+  font-size: 50px;
+  font-weight: bolder;
 }
 
 .container3 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 25px;
+  grid-template-columns: 400px 25% 500px;
+  grid-template-rows: 170px 200px 200px;
   grid-template-areas:
-    "header . ."
-    "content content side"
-    "content1 content2 side1";
-  border: 5px solid purple;
+    "header side sidebar"
+    "content content1 ."
+    "content2 content3 .";
+  margin-bottom: 100px;
 }
 
-.gallery {
+.box23{
+  grid-area: sidebar;
+  height: 400px;
+  margin-left: 100px;
+  background-color: #FFFF;
+}
+
+.box23__book{
+  font-size: 23px;
+}
+
+.lnr-pencil{
+  margin-left: 90px;
+}
+
+.box23__happy{
+  margin-bottom: 30px;
+}
+
+.box23__numstudents{
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 30px;
+}
+
+.box23__num {
+  margin-top: 50px;
+  margin-left: 10px;
+  padding: 15px 15px 15px 15px;
+  font-size: 35px;
+  background-color: #D3D3D3;
+  border: 1px solid gray;
+}
+
+.box23__submit {
+  background-color: orange;
+  color: #FFFFFF;
+  border: none;
+  width: 75%;
+  height: 60px;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.box {
   grid-area: header;
-  width: 350px;
-  height: 50px;
-  border: 5px solid green;
+  margin-top: 50px;
+  margin-left: 60px;
+  font-size: 30px;
+  font-weight: 900;
 }
 
-.box5 {
-  grid-area: content;
-  border: 5px solid yellow;
-}
-
-.box6 {
-  grid-area: content1;
-  width: 150px;
-  height: 150px;
-  border: 5px solid red;
-}
-
-.box7 {
-  grid-area: content2;
-  width: 150px;
-  height: 150px;
-  border: 5px solid pink;
-}
-
-.box8 {
-  grid-area:side1;
-  width: 150px;
-  height: 150px;
-  border: 5px solid orange;
-}
-
-.box9 {
+.book-button {
   grid-area: side;
-  width: 150px;
-  height: 150px;
-  border: 5px solid blue;
+  width: 200px;
+  height: 50px;
+  margin-top: 90px;
+  margin-left: 80px;
+  border: none;
+  font-family: 'Montserrat';
+  font-size: 10px;
 }
 
-.container4 {
-  display: flex;
-  border: 5px solid pink;
+.box1 {
+  grid-area: content;
+  margin-left: 50px;
+}
+
+.box1__image1{
+  filter: brightness(75%);
+}
+
+.text2 {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 200px;
+  grid-template-rows: 20px;
+  justify-items: start;
+  position: absolute;
+  color: #FFFFFF;
+  z-index: 2;
+}
+
+.type {
+  margin-top: 60px;
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.dollar{
+  margin-top: 60px;
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.lesson{
+margin-bottom: 20px;
+margin-left: 10px;
+font-size: 12px;
+}
+
+.text3 {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 200px;
+  grid-template-rows: 20px;
+  justify-items: start;
+  position: absolute;
+}
+
+.type1 {
+  margin-top: 60px;
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.dollar1 {
+  margin-top: 85px;
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.lesson1 {
+margin-bottom: 20px;
+margin-left: 10px;
+font-size: 12px;
+}
+
+.box2 {
+  grid-area: content1;
+}
+
+.box3 {
+  grid-area: content2;
+  margin-left: 50px;
+}
+
+.box4 {
+  grid-area: content3;
 }
 
 .container5 {
   display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: 10% 25% 25%;
+  grid-template-areas:
+    "header . ."
+    "content content side"
+    "content1 content2 side1";
+  background-color: #D3D3D3;
+  padding-bottom: 100px;
+}
+
+.gallery {
+  grid-area: header;
+  align-self: center;
+  margin-left: 100px;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.box5 {
+  grid-area: content;
+  margin-left: 100px;
+}
+
+.box6 {
+  grid-area: content1;
+  margin-left: 100px;
+}
+
+.box7 {
+  grid-area: content2;
+}
+
+.box8 {
+  grid-area:side;
+  width: 300px;
+  height: 250px;
+  border: 1px solid gray;
+  font-size: 15px;
+  text-align: center;
+  margin-left: 50px;
+  background-color: white;
+}
+
+.box8--num{
+  color:gray;
+  font-size: 15px;
+  text-align: right;
+}
+
+.box9 {
+  grid-area: side1;
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.box9__reason {
+  font-size: 15px;
+  text-align: left;
+  color: gray;
+}
+
+.why{
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: center;
+}
+
+.container6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+.newsletter{
+  color: @section-titles-one;
+  position: absolute;
+}
+.newsletter1, .newsletter2{
+  margin-bottom: 10px;
+}
+.container7 {
+  display: grid;
+  grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 250px 250px 250px;
+  justify-items: center;
   grid-template-areas:
     ". header ."
     "section section1 section2";
-  border: 5px solid blue;
 }
 
 .news{
+  margin-top: 150px;
+  text-align: center;
   grid-area: header;
-  border: 5px solid purple;
+  font-size: 30px;
+}
+
+.hr1 {
+width: 15%;
+height: 1px;
+margin-left: auto;
+margin-right: auto;
+background-color: #D3D3D3;
+border: 0 none;
 }
 
 .box10 {
   grid-area: section;
-  width: 150px;
-  height: 150px;
-  border: 5px solid black;
 }
 
 .box11 {
   grid-area: section1;
-  width: 150px;
-  height: 150px;
-  border: 5px solid red;
 }
 
 .box12 {
   grid-area: section2;
-  width: 150px;
-  height: 150px;
-  border: 5px solid green;
 }
 
-.container6 {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas:
-    "header . sidebar "
-    "content content content1"
-    "content content content2";
-  border: 5px solid yellow;
-}
-
-.touch {
-  grid-area: header;
-  border: 5px solid orange;
-}
-
-.touchform {
-  grid-area: content;
-  border: 5px solid pink;
+.box13 {
+  grid-area: section3;
+  margin-left: 120px;
+  color:orange;
 }
 
 .box14 {
-   grid-area: content2;
-  width: 100px;
-  height: 100px;
-  border: 5px solid purple;
+  margin-left: 40px;
+  text-align: center;
 }
 
-.box15 {
-  grid-area: content1;
-  width: 100px;
-  height: 100px;
-  border: 5px solid brown;
+.container8 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px 1fr 1fr 1fr;
+  grid-template-areas:
+  'header header1 '
+  'message teacher'
+  'message teacher'
+  'button side';
+  background-image: url(images/bg-image-02.jpg);
+  height: 200vh;
+  background-size: contain;
+  color: #FFFFFF;
+  font-size: 30px;
 }
 
-.box16 {
-  grid-area: sidebar;
-  width: 300px;
-  height: 50px;
-  border: 5px solid green;
+.box15{
+  grid-area: header;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+
 }
 
-.container7 {
+.box16{
+  grid-area: header1;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+
+.box17{
+  grid-area: message;
+  background-color: #FFFF;
+  align-self: center;
+  margin-left: 200px;
+}
+
+.message {
+height: 100px;
+}
+
+.box24{
+  grid-area: teacher;
+  margin-left: 50px;
+}
+.teacher{
+  grid-area: teacher;
+  background-color: orange;
+}
+
+.teacher1{
+  grid-area: teacher1;
+  background-color: orange;
+}
+
+.container8__teacher{
+  font-size: 12px;
+  font-style: italic;
+}
+
+.container8__teachername{
+font-size: 20px;
+}
+
+.container8_location {
+  font-size: 15px;
+}
+.container8_phone{
+  font-size: 20px;
+}
+
+.container9 {
   display: flex;
-  border: 5px solid orange;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  height: 150vh;
+  background-color: #FFFFFF;
 }
-.box17 {
-  width: 100px;
-  height: 100px;
-  border: 5px solid purple;
-}
-
 .box18 {
   width: 100px;
   height: 100px;
-  border: 5px solid pink;
+  border: 5px solid purple;
 }
 
 .box19 {
   width: 100px;
   height: 100px;
+  border: 5px solid pink;
+}
+
+.box20 {
+  width: 100px;
+  height: 100px;
   border: 5px solid blue;
+}
+
+.hr2 {
+width: 80%;
+height: 1px;
+margin-left: auto;
+margin-right: auto;
+background-color:#666;
+border: 0 none;
+margin-top: 100px;
+margin-bottom:100px;
+}
+
+.box21 {
+align-self: center;
 }
 
